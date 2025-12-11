@@ -61,7 +61,6 @@ int main(const int argc, char *argv[])
     totalName[strlen(dirname) - 1] = '/';
   }
   strcat(totalName, filename);
-  printf("%s\n", totalName);
   FILE *fptr = fopen(totalName, "r");
   while (list != NULL) {
     Node *temp = list;
